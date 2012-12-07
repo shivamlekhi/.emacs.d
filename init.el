@@ -40,7 +40,8 @@
 (require 'multiple-cursors)
 
 ;;Changing backup file directory
-(setq backup-directory-alist
-      `((".*" . ,"~/.emacs_backups")))
-(setq auto-save-file-name-transforms
-      `((".*" ,"~/.emacs_backups")))
+(setq backup-directory-alist `((".*" . ,"~/.emacs_backups")))
+(setq auto-save-file-name-transforms `((".*" ,"~/.emacs_backups")))
+
+;;respond will y or n(instead of yes or no)
+(fset 'yes-or-no-p 'y-or-n-p)
