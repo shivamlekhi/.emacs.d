@@ -28,4 +28,19 @@
 (add-to-list 'load-path "~/.emacs.d") 
 (require 'defuns)
 (require 'key-bindings)
+
+
+;;Yasnippet Setup
+(add-to-list 'load-path "~/.emacs.d/Plugins/yasnippet")
+(require 'yasnippet)
+(yas-global-mode 1)
+
+;;Multiple Cursors
+(add-to-list 'load-path "~/.emacs.d/Plugins/multiple-cursors")
 (require 'multiple-cursors)
+
+;;Changing backup file directory
+(setq backup-directory-alist
+      `((".*" . ,"~/.emacs_backups")))
+(setq auto-save-file-name-transforms
+      `((".*" ,"~/.emacs_backups")))

@@ -19,4 +19,11 @@
 
 </html>"""))
 
+;;Autosaving file 
+(defun live-edit()
+  "Function that lets you live edit css and html"
+  (intracive)
+  (run-with-timer))
+
 (provide 'defuns)
+
