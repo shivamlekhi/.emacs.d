@@ -18,5 +18,8 @@
 (global-set-key (kbd "C-<") 'mc/mark-previous-like-this)
 (global-set-key (kbd "C-c C-<") 'mc/mark-all-like-this)
 
+(global-set-key (kbd "C-x p") 'ido-switch-buffer)
+
+(global-set-key (kbd "C-x w") 'expand-region)
 
 (provide 'key-bindings)

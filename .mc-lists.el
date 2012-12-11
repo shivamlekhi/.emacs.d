@@ -13,4 +13,5 @@
 (setq mc/cmds-to-run-once
       '(
 	cua-delete-region
+	keyboard-escape-quit
 	))

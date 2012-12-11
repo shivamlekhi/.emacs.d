@@ -17,18 +17,24 @@
 (custom-set-faces
  '(default ((t (:family "Monaco" :foundry "unknown" :slant normal :weight normal :height 98 :width normal)))))
 
-;;ido-mode enabled
+;;Changing Background color
+(set-background-color "black") 
+
+(setq user-mail-address "lekhishivam@gmail.com")
+
+
+
+;;Custom set Variables
+(require 'custom)
+
+;;Enabled Modes
 (ido-mode 1)
-
-(setq standard-indent 4) ;;Indent Size
-
-(set-background-color "black") ;;Changing Background color
+(electric-pair-mode 1)
 
 ;;Adding Custom Files
 (add-to-list 'load-path "~/.emacs.d") 
 (require 'defuns)
 (require 'key-bindings)
-
 
 ;;Yasnippet Setup
 (add-to-list 'load-path "~/.emacs.d/Plugins/yasnippet")
@@ -45,3 +51,13 @@
 
 ;;respond will y or n(instead of yes or no)
 (fset 'yes-or-no-p 'y-or-n-p)
+
+;;Blinking cursor
+(add-to-list 'load-path "~/.emacs.d/Plugins/blinking-cursor")
+(require 'blinking-cursor)
+(blinking-cursor-mode 1)
+
+;;expand-region
+(add-to-list 'load-path "~/.emacs.d/Plugins/expand-region")
+(require 'expand-region)
+(global-set-key (kbd "C-=") 'er/expand-region)

@@ -23,7 +23,7 @@
 ;; This scrolls the buffer to center each cursor in turn.
 ;; Scroll down with C-v, scroll up with M-v
 ;; This is nice when you have cursors that's outside of your view.
-
+(kill-buffer (buffer-name))
 ;;; Code:
 
 (require 'multiple-cursors-core)
